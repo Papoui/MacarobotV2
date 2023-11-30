@@ -1,0 +1,19 @@
+{
+  "name": "saladetomatesoignons",
+  "version": "1.0.0",
+  "description": "Bot discord ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Flo",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  }
+}
