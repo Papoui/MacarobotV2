@@ -10,9 +10,13 @@ module.exports = {
                 .setDescription("Utilisateur à hug")
                 .setRequired(true)),
     async execute(message) {
+        const reponse = await fetch("https://api.otakugifs.xyz/gif?reaction=kiss&format=gif");
+        const hug = await reponse.json();
         usr = message.options.getUser("utilisateur").id;
         const embed = new EmbedBuilder()
              .setDescription(`@<${message.author.id}> fait un câlin à @<${usr}>`)
-             .setImage(
+             .setImage(`${hug.url}`)
+
+        message.channel.send(embed);
     }
 }
